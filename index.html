@@ -5,48 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FroginaTowel Meme Coin</title>
   <style>
-    :root{ --bg:#f0fdf4; --text:#0b3a2a; --accent:#22c55e; --accentH:#16a34a; --footer:#065f46; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);text-align:center}
-    .banner img{width:100%;max-height:520px;object-fit:cover;display:block;margin:0 auto}
-    h1{font-size:3rem;margin:1rem 0 .25rem}
-    p.tag{margin:0 0 1.5rem 0;font-size:1.15rem}
-    .btns{margin-bottom:2rem}
-    .btn{background:var(--accent);border:none;border-radius:10px;padding:1rem 1.75rem;margin:.35rem;
-         font-size:1rem;cursor:pointer}
-    .btn:hover{background:var(--accentH);color:#fff}
-    section{padding:2rem 1rem;max-width:900px;margin:0 auto}
-    .logo{height:110px;border-radius:14px}
-    footer{background:var(--footer);color:#fff;padding:1rem;margin-top:3rem}
+    :root {
+      --bg: #f0fdf4;
+      --text: #0b3a2a;
+      --accent: #22c55e;
+      --accentH: #16a34a;
+      --footer: #065f46;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Arial", Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      background: url("frog-banner.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-overlay {
+      background: rgba(0,0,0,0.55);
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: .5rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* BUTTONS */
+    .btns {
+      margin-top: 1rem;
+    }
+    .btn {
+      background: var(--accent);
+      border: none;
+      border-radius: 30px;
+      padding: 0.9rem 2rem;
+      margin: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: var(--accentH);
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* LOGO */
+    .logo {
+      height: 120px;
+      margin-bottom: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--footer);
+      color: white;
+      text-align: center;
+      padding: 1.2rem;
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
 
-  <!-- BIG BANNER -->
-  <div class="banner">
-    <img src="frog-banner.jpg" alt="FroginaTowel Banner">
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <img class="logo" src="frog-in-a-towel.png" alt="FroginaTowel Logo">
+      <h1>🐸 FroginaTowel</h1>
+      <p>The meme coin that just got out of the pool.</p>
+      <div class="btns">
+        <button class="btn" onclick="location.href='https://t.me/+-C4RlQANyqtkZDA0'">Join Telegram</button>
+        <button class="btn" onclick="location.href='https://x.com/FroginaTowel'">Follow on X</button>
+      </div>
+    </div>
   </div>
 
-  <!-- LOGO + TITLE -->
-  <div style="margin-top:14px">
-    <img class="logo" src="frog-in-a-towel.png" alt="FroginaTowel Logo">
-  </div>
-
-  <h1>FroginaTowel</h1>
-  <p class="tag">The meme coin that just got out of the pool.</p>
-
-  <!-- SOCIAL BUTTONS -->
-  <div class="btns">
-    <button class="btn" onclick="location.href='https://t.me/+-C4RlQANyqtkZDA0'">Join Telegram</button>
-    <button class="btn" onclick="location.href='https://x.com/FroginaTowel'">Follow on X</button>
-  </div>
-
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section>
     <h2>About</h2>
     <p>A relaxed frog, fresh out of the pool, wrapped in his towel. FroginaTowel is here to remind everyone that memes rule crypto.</p>
   </section>
 
   <footer>© 2025 FroginaTowel</footer>
+
 </body>
 </html>
