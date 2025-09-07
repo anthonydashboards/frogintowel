@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FroginaTowel Meme Coin</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0fdf4; color: #1e3a1e; text-align: center; }
-    .banner img { width: 100%; max-height: 500px; object-fit: cover; }
-    h1 { font-size: 3rem; margin-top: 1rem; }
-    p { font-size: 1.2rem; margin: 0.5rem 0 2rem 0; }
-    button { background: #22c55e; border: none; padding: 1rem 2rem; font-size: 1rem; border-radius: 10px; cursor: pointer; margin: 0.5rem; }
-    button:hover { background: #16a34a; color: white; }
-    section { padding: 2rem; max-width: 800px; margin: auto; }
-    footer { background: #065f46; color: white; text-align: center; padding: 1rem; margin-top: 3rem; }
+    :root{
+      --bg:#f0fdf4; --text:#1e3a1e; --accent:#22c55e; --accentHover:#16a34a; --footer:#065f46;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);text-align:center}
+    .banner img{width:100%;max-height:520px;object-fit:cover;display:block;margin:0 auto}
+    h1{font-size:3rem;margin:1rem 0 .25rem}
+    p.tag{margin:0 0 1.5rem 0;font-size:1.15rem}
+    .btns{margin-bottom:2rem}
+    .btn{background:var(--accent);border:none;border-radius:10px;padding:1rem 1.75rem;margin:.35rem;
+         font-size:1rem;cursor:pointer}
+    .btn:hover{background:var(--accentHover);color:white}
+    section{padding:2rem 1rem;max-width:900px;margin:0 auto}
+    footer{background:var(--footer);color:#fff;padding:1rem;margin-top:3rem}
+    .logo{height:110px;vertical-align:middle;margin-right:.5rem}
+    .title{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap}
   </style>
 </head>
 <body>
 
-  <!-- Big banner across the top -->
-<div class="banner">
-  <img src="pool-frog.png" alt="FroginaTowel Banner">
-</div>
-
-  <!-- Title + description -->
-  <h1>🐸 Frog in a Towel</h1>
-  <p>The meme coin that just got out of the pool.</p>
-
-  <!-- Social buttons -->
-  <div>
-    <button onclick="window.location.href='https://t.me/+-C4RlQANyqtkZDA0'">Join Telegram</button>
-    <button onclick="window.location.href='https://x.com/FroginaTowel'">Follow on X</button>
+  <!-- BIG BANNER -->
+  <div class="banner">
+    <img src="./pool-frog.png" alt="FroginaTowel Banner">
   </div>
 
-  <!-- About Section -->
+  <!-- TITLE + TAGLINE -->
+  <div class="title">
+    <img class="logo" src="./frog-in-a-towel.png" alt="FroginaTowel Logo">
+    <h1>FroginaTowel</h1>
+  </div>
+  <p class="tag">The meme coin that just got out of the pool.</p>
+
+  <!-- SOCIAL BUTTONS -->
+  <div class="btns">
+    <button class="btn" onclick="location.href='https://t.me/+-C4RlQANyqtkZDA0'">Join Telegram</button>
+    <button class="btn" onclick="location.href='https://x.com/FroginaTowel'">Follow on X</button>
+  </div>
+
+  <!-- ABOUT -->
   <section>
     <h2>About</h2>
     <p>A relaxed frog, fresh out of the pool, wrapped in his towel. FroginaTowel is here to remind everyone that memes rule crypto.</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 FroginaTowel</p>
-  </footer>
-
+  <footer>© 2025 FroginaTowel</footer>
 </body>
 </html>
